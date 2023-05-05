@@ -1,24 +1,20 @@
 #include <stdio.h>
 #define MAXSIZE 5
- 
-struct stack
+ struct stack
 {
-    int stk[MAXSIZE];
+   int stk[MAXSIZE];
     int top;
 };
 typedef struct stack STACK;
 STACK s;
- 
-void push(void);
+ void push(void);
 int  pop(void);
 void display(void);
- 
-void main ()
+ void main ()
 {
     int choice;
     int option = 1;
     s.top = -1;
- 
     printf ("STACK OPERATION\n");
     while (option)
     {
@@ -28,7 +24,6 @@ void main ()
         printf ("      3    -->    DISPLAY               \n");
         printf ("      4    -->    EXIT           \n");
         printf ("------------------------------------------\n");
- 
         printf ("Enter your choice\n");
         scanf    ("%d", &choice);
         switch (choice)
@@ -85,7 +80,6 @@ int pop ()
     }
     return(num);
 }
-
 void display ()
 {
     int i;
